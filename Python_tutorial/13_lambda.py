@@ -15,3 +15,6 @@ sumdoubler = function1(2)
 sumtripler = function1(3)
 print(sumdoubler(1,2))
 print(sumtripler(1,2))
+
+# make a single line lambda function
+print((lambda x, y: x + y)(5, 3))

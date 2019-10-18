@@ -31,6 +31,10 @@ print(list)
 
 # print a string value from a specific point (called a slice)
 print(name2[1:])
+print('Andrew'[3:])
+
+# print a string value from a specific point (called a slice), and skip every other value
+print('Andrew'[1:10:2])
 
 # count the # of string values
 colors = ['red', 'blue', 'green']
@@ -40,7 +44,7 @@ print(len(colors))
 print(colors[:-1])
 
 # print the 3rd list item to the end
-print(list[2:])
+print(list1[2:])
 
 # simultaneously assign A VALUE to multiple variables
 x = y = z = 'orange'
@@ -51,9 +55,9 @@ x, y, z = 'orange', 'vanilla', 'grape'
 print(x, y, z)
 
 # combining scripts and variables (text variables)
-x = '   is   '
+x = 'is'
 y = 'awesome'
-print('python ' + x + ' '  + y)
+print('python', x, y)
 
 # remove white space at beginning and end of a variable
 print(x.strip())

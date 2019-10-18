@@ -3,6 +3,11 @@
 tuple1 = ('sedan', 'suv', 'truck')
 print(tuple1)
 
+# create a tuple without parenthesis
+tuple2 = 'Nick', 'Jon', 'Andrew'
+print(tuple2)
+print(type(tuple2))
+
 # accesss tuple items
 print(tuple1[2])
 
@@ -28,6 +33,11 @@ print(x)
 # find the position of a specific value in a tuple
 y = tuple2.index('water')
 print(y)
+
+# define a one integer tuple
+tuple2 = (7,)
+print(tuple2)
+print(type(tuple2))
 
 # del a tuple
 del tuple1

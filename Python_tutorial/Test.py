@@ -49,5 +49,8 @@ for x in generatorfunction1():
 print('testing 1 2 3')
 '''
 
-print('this should working')
-print('hgdsjhgkjhgkfjewrhgki')
+class Pet(object):
+   def my_method(self):
+      print("I am a Cat")
+cat = Pet()
+cat.my_method()

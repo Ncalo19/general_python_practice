@@ -30,10 +30,24 @@ for x in range(3, 30, 3):
     if x > 25:
         break
     print(x)
-
+print('hello')
 # nested loops (two arrays/collections in a merged loop)
 size = ('small', 'medium', 'large')
 speed = ('slow', 'average', 'fast')
 for x in size:
     for y in speed:
         print(x, y, 'turtle')
+
+# extract all numbers from a string
+string1 = 'hello world 123456'
+for x in string1:
+    if x.isdigit():
+        print(x)
+
+# create a dictionary using a for loop
+list1 = [1, 2, 3, 4, 5]
+dict1 = {}
+for x in list1:
+    if x % 2 == 1: # if x modulus 2 (remainder of x/2) == 1
+        dict1[x] = x ** 2
+print(dict1)

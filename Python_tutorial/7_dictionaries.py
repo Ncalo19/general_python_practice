@@ -5,7 +5,7 @@ dict1 = {
 'model' : 'A7',
 'year' : 2020
 }
-print(dict1)
+
 
 # accessing values (two ways)
 print(dict1['brand'])
@@ -77,7 +77,6 @@ print(dict1.items())
 # print the dictionary keys
 print(dict1.keys())
 
-print('testtttttttttttt')
 # returns the value of the specified key, but lists a value in case one not in dict
 print(dict1.setdefault('brand', 'ferrari'))
 
@@ -100,3 +99,11 @@ print(dict1)
 
 # delete a dict
 del dict1
+
+# print a dictionary's "keys:values"
+dict1 = {
+'a':1,
+'b':2,
+'c':3}
+for key, value in dict1.items():
+    print(f"{key}: {value}")
