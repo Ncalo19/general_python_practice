@@ -25,9 +25,12 @@ for x in dict1.keys():
 for x in dict1.values():
     print(x)
 
-# loop through dictionary 'keys - values'
+# loop through dictionary 'keys - values' (two ways)
 for x, y in dict1.items():
     print(x, '-', y)
+
+for x, y in dict1.items():
+    print(f'{x} - {y}')
 
 # print a script if a key is in the dictionary (two ways)
 if 'year' in dict1:
@@ -35,20 +38,32 @@ if 'year' in dict1:
 if 'year' in dict1.keys():
     print('yes it is')
 
-# adding an item to the dictionary
+# adding an item to the dictionary (two ways)
 dict1['color'] = 'brown'
 print(dict1)
+dict1.update({'transmission': 'stick'})
+print(dict1)
 
-# removing items from dictionary (two ways)
+# add multiple key value pairs to the dict
+dict1.update({'color': 'red', 'transmission': 'stick'})
+print(dict1)
+
+# removing specific items from dictionary (two ways)
 dict1.pop('color')
 print(dict1)
 
 del dict1['year']
 print(dict1)
 
-# copy a dictionary
-dictcopy = dict1.copy()
-print(dictcopy)
+# remove last inserted key value pair
+dict1.popitem()
+print(dict1)
+# print the item being popped off
+print(dict1.popitem())
+
+# make a copy of a dict
+dict5 = dict1.copy()
+print(dict5)
 
 # make a new dictionary (dictionary constructor)
 dict2 = dict(lager = 'sam_adams', ale = 'brooklyn', stout = 'guiness')
@@ -77,21 +92,11 @@ print(dict1.items())
 # print the dictionary keys
 print(dict1.keys())
 
-# returns the value of the specified key, but lists a value in case one not in dict
-print(dict1.setdefault('brand', 'ferrari'))
-
-# add multiple key value pairs to the dict
-dict1.update({'color': 'red', 'transmission': 'stick'})
-print(dict1)
-
 # print dict values
 print(dict1.values())
 
-# remove last inserted key value pair
-dict1.popitem()
-print(dict1)
-# print the item being popped off
-print(dict1.popitem())
+# print the value of a specified key, but list a value to print in case there is no value for the key
+print(dict1.setdefault('brand', 'ferrari'))
 
 # remove all items from a dict
 dict1.clear()
@@ -100,10 +105,10 @@ print(dict1)
 # delete a dict
 del dict1
 
-# print a dictionary's "keys:values"
-dict1 = {
-'a':1,
-'b':2,
-'c':3}
-for key, value in dict1.items():
-    print(f"{key}: {value}")
+'''
+# removing items from dictionary (two ways)
+# make a copy of a dict
+# create a multi key dictionary all with the same value
+# print the value of a specified key, but list a value to print in case there is no value for the key
+# loop through dictionary 'keys - values' (two ways)
+'''

@@ -62,11 +62,15 @@ print('python', x, y)
 # remove white space at beginning and end of a variable
 print(x.strip())
 
-# combining string and numbers
+# combining string and numbers using two ways
 age = 23
 opinion = 'which is young'
-x = 'Nick is {} {}' # the {} are necessary)
-print(x.format(age, opinion))
+x = 'Nick is {}, {}.' # the {} are necessary)
+print(x.format(age, opinion)) # str.format()
+
+age = 23
+opinion = 'which is young'
+print(f"Nick is {age}, {opinion}.")
 
 # can use numbers to id position in curly braces
 x = 'Nick is {1} {0}'

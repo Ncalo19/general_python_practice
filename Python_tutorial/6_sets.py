@@ -17,8 +17,11 @@ if 'squirtle' in set1:
 set1.add('pidgey')
 print(set1)
 
+# add multiple valuses to a set
 set1.update(['mew', 'mewtwo'])
 print(set1)
+
+# add a set to a set
 set2 = {'artichuno', 'zapados'}
 set1.update(set2)
 print(set1)
@@ -57,11 +60,7 @@ print(z)
 set1.difference_update(set2)
 print(set1) #(squirtle will now never appear, since it's in both sets)
 
-set1.clear()
-print(set1)
 
-del set1
-del set2
 
 set3 = {'artichuno', 'zapados', 'moltres', 'hoho'}
 set4 = set(('zapados', 'hoho', 'mew', 'mewtwo'))
@@ -72,10 +71,6 @@ for x in set3, set4:
 # print values unique to each set
 n = set3.symmetric_difference(set4)
 print(n)
-
-# change the values of set1 to the values in both set1 and set2
-set3.intersection_update(set4)
-print(set3, set4)
 
 # determine if no items are present in both sets (both sets are unique from eachother)
 n = set3.isdisjoint(set4)
@@ -96,10 +91,14 @@ set4 = set(('zapados', 'hoho', 'mew', 'mewtwo'))
 set3.symmetric_difference_update(set4)
 print(set3)
 
-# merge two sets (removes duplicates)
-set3.update(set4)
-print(set3)
-
-# create a new set made up of two already defined sets (removes duplicates)
+# create a new set made up of two already defined sets (sets do not have duplicate values)
 set5 = set3.union(set4)
 print(set5)
+
+'''
+# add multiple values to a set
+# find similarities between >= 2 sets
+# print values unique to both sets
+# change the values in a set to the unique values between two sets
+# create a new set made up of two already defined sets (sets do not have duplicate values)
+'''

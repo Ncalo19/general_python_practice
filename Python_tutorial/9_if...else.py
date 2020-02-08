@@ -42,7 +42,7 @@ elif person1 >= tier_4:
 else:
     print('run away')
 
-# if...else with multiple variable values
+# if...else with multiple variable values using dictionaries
 player1 = {
 'speed' : 10,
 'skill' : 8,
@@ -68,6 +68,27 @@ elif player_profile >= tier4:
 else:
     print('you did not make the team')
 
+# if...else with multiple variable values using a class
+class class1:
+    def __init__(self, name, age, gpa):
+        self.name = name
+        self.age = age
+        self.gpa = gpa
+    def function1(self):
+        if self.age < 7 and self.gpa < 2.8:
+            print('Your child will be held back')
+        elif self.age > 7 and self.gpa < 2.5:
+            print('Your child will be held back')
+        else:
+            print('Your child will be advancing')
+
+p1 = class1('Nick', 6, 3.5)
+p2 = class1('Jonathan', 7, 2.6)
+p3 = class1('Andrew', 7, 3.2)
+p4 = class1('Sarah', 6, 2.9)
+
+p4.function1()
+
 # a different if...else with multiple variable values (not sum)
 player_profile = {
 'speed' : 10,
@@ -81,3 +102,9 @@ elif player_profile['speed'] > 9 and player_profile['skill'] > 5 and player_prof
     print('You made the team because of your size and speed')
 else:
     print('Better luck next year')
+
+'''
+# if statment with multiple else statments on one line
+# if...else with multiple variable values using dictionaries
+# if...else with multiple variable values using a class
+'''

@@ -16,7 +16,10 @@ print(list1[1])
 for x in list1:
     print(x)
 
-# check if item exists
+# check if item exists in a list
+print('pepper' in list1)
+
+# if an item exists in a list, print a response
 if 'pepper' in list1:
     print('it is a fruit')
 
@@ -34,30 +37,40 @@ print(list1)
 list1.reverse()
 print(list1)
 
-# add an item to the end of a list
+# add an item to the end of a list (two ways)
 list1.append('cranberry')
+
+list1.extend('plum')
+
 # add item in a specific position
 list1.insert(2,'rasberry')
 print(list1)
 
-# add item or list to the end of a list (two ways to do it)
+# add a list to the end of a list
 list2 = ['cucumber', 'tomato']
-list1.extend(list2)
+list1.extend(list2) # must use a list (cannot use multiple scripts)
 
-# remove an item
+# remove an item by it's script
 list1.remove('asparagus')
-# removes specified index or last item from list if not specified
-list1.pop()
-# deletes a specified index
+# remove a specified index (two ways)
 del list1[2]
+list1.pop(0)
+print(list1)
+# remove last item from list without specifying the index
+list1.pop()
+
+# remove multiple indexes
+list1 = ['orange', 'tomato', 'pepper']
+del list1[1:]
 print(list1)
 
+
 # reference a list (list being referenced must be after the = sign)
-list2 = list1
+list2 = list1 # same memory location. list2 is pointing to list2, it is the same object (It has the same memory location) (list 2 is list1)
 print(list2)
 
 # copy a list
-list3 = list1.copy()
+list3 = list1.copy() # different memory location. list3 is just a copy, not the same object (it has a different memory location) (list 3 is not list1)
 print(list3)
 
 list4 = list(list1)
@@ -72,3 +85,12 @@ print('should be an error below:')
 # delete the list
 del list1
 print(list1)
+
+'''
+# position of a value
+# alphabetize a list
+# reverse the order of a list
+# remove a specified index (two ways)
+# remove last item from list without specifying the index
+# copy a list
+'''

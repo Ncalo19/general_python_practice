@@ -42,15 +42,22 @@ dict1['year'] = 2020
 # deleting items from collections/arrays
 # list
 list1.remove('dog')
-del list1[0]
-list1.pop() # can insert a number to specify which list item
+del list1[0] # use to delete multiple list items (ex. [1:])
+list1.pop() # the last item is popped
+list1.pop(0) # can add an index for a popped list item
 # tuple: unchangable
 # set
 set1.remove('pokemon')
 set1.discard('yughio')
-set1.pop() # can only be random (no number)
+set1.pop() # the last item is popped (random because sets have no order)
 # dictionary
-dict1.pop('make') # cannot be blank
+dict1.pop('make') # cannot be blank (use to delete multiple value pairs)
 del dict1['model']
 dict1.popitem() # removes last added value pair
-print(dict1)
+
+# create a list both ways
+# create a dict both ways
+# add multiple values to a list, set, and dict
+# del items from a list
+# del items from a dict
+# change values in collections

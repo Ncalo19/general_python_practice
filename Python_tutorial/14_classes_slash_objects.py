@@ -14,7 +14,6 @@ print(class1.age)
 
 class class1:
     def __init__(self, name, age): # self is a reference to the current instance of the class
-
         self.name = name # self is used to access variables that belong to the class
         self.age = age
 p1 = class1('Nicolas', 23) # p1 is the object

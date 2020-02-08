@@ -40,16 +40,16 @@ print(x > 7 and x < 15)
 print(x < 8 or x > 9)
 print(not(x > 7 and x < 15))
 
-# identity operators : is, is not (must be same object, not just ==)
-x = 'dog'
-y = 'dog'
+# identity operators : is, is not (must be same object(same memory location), not just same value (==))
+x = ['dog', 'cat']
+y = ['dog', 'cat']
 z = x
 print(x is y)
 print(x is z)
 print(x is not z)
 print(x == y)
 
-# membership operators : in, not in
+# membership operators : in, not in (only works for singl script or section of a script, does not work for integers)
 x = 'car', 'boat', 'plane'
 print('plane' in x)
 print('speace ship' not in x)
@@ -79,3 +79,10 @@ print(10 << 2)
 # >>: right shift (shift the bits two zero bits to the right (take away two bits from
 # the end))
 print(10 >> 2)
+
+'''
+# assignment operators (assign a value to = itself operated on by another number)
+# logical operators : and, or, not
+# identity operators : is, is not (must be same object(same memory location), not just same value (==)
+# membership operators : in, not in
+'''
