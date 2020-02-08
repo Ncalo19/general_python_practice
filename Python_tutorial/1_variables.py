@@ -1,8 +1,8 @@
 # creating variables
 word1 = ('Rangers ')
 word2 = ('Suck ')
-word3 = ('Dick ')
-word4 = ('8------->')
+word3 = ('at')
+word4 = ('hockey')
 sentence = (word1 + word2 + word3 + word4)
 print(sentence)
 
