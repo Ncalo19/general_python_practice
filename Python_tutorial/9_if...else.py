@@ -23,24 +23,24 @@ if x > z or y > z:
 # if...else statement (if -> elif(elseif) -> else)
 # if neither the if statement nor the elif statement hits, return the string after
 # the else statement
-tier_1 = 100000 # marry
-tier_2 = 50000 # date
-tier_3 = 25000 # fuck buddys
-tier_4 = 10000 # just friends
-tier_5 = 0 # run away
+tier_1 = 1000000 # a nice house
+tier_2 = 500000 # a starter house
+tier_3 = 250000 # a not so great house
+tier_4 = 100000 # a bad house
+tier_5 = 0 # no house
 
-person1 = 5
+house = 5
 
-if person1 >= tier_1:
-    print('marry them')
-elif person1 >= tier_2:
-    print('date them')
-elif person1 >= tier_3:
-    print('fuck buddys')
-elif person1 >= tier_4:
-    print('just friends')
+if house >= tier_1:
+    print('a nice house')
+elif house >= tier_2:
+    print('a starter house')
+elif house >= tier_3:
+    print('a not so great house')
+elif house >= tier_4:
+    print('a bad house')
 else:
-    print('run away')
+    print('no house')
 
 # if...else with multiple variable values using dictionaries
 player1 = {
